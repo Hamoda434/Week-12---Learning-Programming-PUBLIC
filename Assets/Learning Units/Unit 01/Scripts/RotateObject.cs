@@ -18,10 +18,17 @@ public class RotateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isRotating)
+        if (IsRotating) //changed to the public method
         {
             transform.Rotate(0, .1f, 0);
         }
         
     }
+
+    public bool IsRotating //added public method
+    {
+        get {return isRotating;}
+        set {isRotating = value;}
+    }
+
 }

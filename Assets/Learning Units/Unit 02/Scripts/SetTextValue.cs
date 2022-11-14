@@ -6,7 +6,7 @@ using TMPro;
 public class SetTextValue : MonoBehaviour
 {
     TextMeshProUGUI textMeshProUGUI;
-    
+    [SerializeField] public bool isRotating;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class SetTextValue : MonoBehaviour
         
     }
 
-    void ChangeText(bool isRotating)
+    public void ChangeText(bool isRotating)
     {
         if (isRotating)
         {
